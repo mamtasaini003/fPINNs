@@ -16,9 +16,8 @@ The time-fractional Burgers-Huxley equation is a nonlinear partial differential 
    - Enforced physical constraints through a physics-informed loss function.  
    - Trained the model using Adam and L-BFGS optimizers for improved convergence.  
 
-### 3. **Comparison with Finite Difference Method (FDM)**  
-   - Implemented FDM to obtain numerical solutions as a benchmark.  
-   - Compared PINN results against FDM to validate accuracy.  
+### 3. **Comparison using graph**  
+   - Compared PINN results to validate accuracy.  
 
 ## Implementation Details  
 - **Framework:** Pytorch  
@@ -27,8 +26,7 @@ The time-fractional Burgers-Huxley equation is a nonlinear partial differential 
 - **Evaluation Metrics:** Mean squared error (MSE) and L2 error between numerical and PINN solutions  
 
 ## Results  
-- PINNs successfully approximated the fractional Burgers-Huxley equation.  
-- The method demonstrated strong agreement with FDM solutions.  
+- PINNs successfully approximated the fractional Burgers-Huxley equation.   
 - Reduced the need for explicit meshing, making it adaptable to complex domains.  
 
 ## Future Work  
